@@ -25,7 +25,7 @@
   header{position:sticky;top:0;z-index:5;background:rgba(10,10,11,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
   .bar{max-width:1180px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:14px}
   .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text)}
-  .brand img{height:44px;width:auto;display:block}
+  .brand img{width:104px;height:56px;object-fit:cover;display:block;margin:-6px 0}
   .brand .fallback{display:none;font-weight:700;font-size:20px;letter-spacing:.5px}
   .brand .name{font-weight:600;font-size:17px;letter-spacing:.2px}
   .brand .name span{color:var(--muted);font-weight:500}
@@ -142,7 +142,7 @@
   <div class="bar">
     <a class="brand" href="https://homesightvisual.com" target="_blank" rel="noopener">
       <img src="https://homesightvisual.com/wp-content/uploads/2026/08/d778ecf6d47445c1a7658f6a4ff9bbbd-removebg-preview.png"
-           alt="HomesightVisual" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+           alt="HomesightVisual" onerror="if(!this.dataset.r){this.dataset.r=1;this.src=this.src+'?r=1';return}this.style.display='none';this.nextElementSibling.style.display='block'">
       <span class="fallback">HSV</span>
       <span class="name">Lead Engine <span>· HomesightVisual</span></span>
     </a>
